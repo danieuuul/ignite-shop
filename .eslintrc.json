@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["@rocketseat/eslint-config/react", "plugin:prettier/recommended", "plugin:@next/next/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-vars": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "semi": false,
+        "singleQuote": true
+      }
+    ],
+    "jsx-quotes": ["error", "prefer-double"]
+  }
 }
